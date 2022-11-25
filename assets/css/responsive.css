@@ -1,0 +1,44 @@
+
+@media (max-width: 700px) {
+    .header-mobile button {
+        display: none;
+    }
+
+    .header-mobile button {
+        background: none;
+        border: none;
+        color: #fff;
+        display: block;
+    }
+
+    .header-mobile {
+        height: 100%;
+        display: flex;
+    }
+
+    .header-navigation {
+        position: fixed;
+        display: flex;
+        flex-flow: column;
+        height: auto;
+        max-width: 500px;
+        width: 90%;
+        background: red;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+
+    .header-navigation.active {
+        transform: translateX(0);
+    }
+
+    .sobre-image.sobre-image-slider {
+        order: -1;
+    }
+    .sobre-image {
+        max-width: 100%;
+    }
+
+}
