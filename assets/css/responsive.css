@@ -34,10 +34,10 @@
         transform: translateX(0);
     }
 
-    .sobre-image.sobre-image-slider {
+    .section-image.section-image-slider {
         order: -1;
     }
-    .sobre-image {
+    .section-image {
         max-width: 100%;
     }
 

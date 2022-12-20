@@ -36,8 +36,8 @@ body {
     font-family: Regular;
     overflow-x: hidden;
     width: 100vw;
-
 }
+
 /*/*/
 img {
     max-width: 100%;
@@ -238,30 +238,32 @@ p {
 }
 
 .banner-section {
-    max-height: 300px;
-    height: 50vh;
+    max-height: 400px;
+    height: 60vh;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.sobre-image {
+.section-image {
     width: 100%;
     max-width: calc(1200px / 2.6);
+    max-height: 450px;
+    overflow: hidden;
 }
 
 .sobre-content {
     padding: 25px 0;
 }
 
-.sobre-image img {
+.section-image img {
     height: auto;
     width: 100%;
     max-width: initial;
 }
 
-.sobre-text {
+.section-text {
     width: 100%;
     max-width: calc(1200px / 1.7);
     margin: 25px 0 0;
@@ -298,17 +300,17 @@ p {
     justify-content: center;
 }
 
-.sobre-image-slider {
+.section-image-slider {
     height: 330px;
     position: relative;
     overflow: hidden;
 }
 
-.sobre-image-slider-item {
+.section-image-slider-item {
     height: 330px;
 }
 
-.sobre-image-slider-item .sobre-img-slider {
+.section-image-slider-item .sobre-img-slider {
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -374,7 +376,7 @@ p {
 }
 
 .sobre-content-center-slider {
-    height: 350px;
+    height: 380px;
 }
 
 .slider-img {
@@ -430,6 +432,33 @@ p {
     left: auto;
     transform: translate(60px, -30px);
     width: 290px;
+}
+
+.slick-dots {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 0;
+}
+
+.slick-dots li {
+    margin: 0 3px;
+    width: 7px;
+    height: 7px;
+    background-color: #9b9b9b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+}
+
+.slick-dots li.slick-active {
+    background-color: var(--brown);
 }
 
 @keyframes btn_scroll_down_banner {
