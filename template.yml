@@ -1,5 +1,5 @@
 stages:
-- stage: stage 1
+- stage: stage1
   pool:
     vmImage: ubuntu-latest
   jobs:
