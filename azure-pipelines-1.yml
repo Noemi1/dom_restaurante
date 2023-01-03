@@ -10,7 +10,7 @@ steps:
     script: |
       # Write your PowerShell commands here.
       Write-Host "Usando tasks no YAML"
-      White-Host $(saudacao)
+      Write-Host $(saudacao)
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '.'
