@@ -1,11 +1,5 @@
 jobs: 
-- job: job1
-  pool: 
-    vmImage: ubuntu-latest
-  steps: 
-  - template: step1.yml
-
-- job: job2
+- job: PublicandoAzureAppDeploy
   pool: 
     vmImage: ubuntu-latest
   steps: 
