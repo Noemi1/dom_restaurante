@@ -9,4 +9,12 @@ jobs:
   pool: 
     vmImage: ubuntu-latest
   steps: 
-  - template: step2.yml
+  - task: AzureRmWebAppDeployment@4
+    inputs:
+      ConnectionType: 'AzureRM'
+      azureSubscription: 'Azure subscription 1 (5762a227-f807-4aed-8497-0a532cf55cb5)'
+      appType: 'webApp'
+      WebAppName: 'busprime'
+      deployToSlotOrASE: true
+      SlotName: 'production'
+      packageForLinux: '.'
