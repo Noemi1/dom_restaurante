@@ -1,9 +1,12 @@
-trigger:
-- main
+jobs: 
+- job: job1
+  pool: 
+    vmImage: ubuntu-latest
+  steps: 
+  - template: step1.yml
 
-pool:
-  vmImage: ubuntu-latest
-
-extends: 
-  template: template.yml
-
+- job: job2
+  pool: 
+    vmImage: ubuntu-latest
+  steps: 
+  - template: step2.yml
