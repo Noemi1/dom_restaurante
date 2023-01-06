@@ -1,12 +1,8 @@
-jobs: 
-- job: job1
-  pool: 
+stages:
+- stage: stage1
+  pool:
     vmImage: ubuntu-latest
-  steps: 
-  - template: step1.yml
-
-- job: job2
-  pool: 
-    vmImage: ubuntu-latest
-  steps: 
-  - template: step2.yml
+  jobs:
+  - job: job1
+    steps:
+    - script: echo 'Rodando a partir de template.yml'
